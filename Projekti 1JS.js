@@ -1,6 +1,7 @@
 function    newListElement()    {
     var list = document.getElementById('ul');
     var input = document.getElementById('input').value;
+    localStorage.setItem("Tehtävät", input);
     var add = document.createElement('li');
 
     if (input === '' || input.length < 3) {
@@ -16,11 +17,4 @@ function    newListElement()    {
 }
 
 
-let lista = {
-  nimi: "Sami"
-  ikä: 45
-}
 
-let lista_serialized = JSON.stringify(lista);
-localStorage.setItem("lista", lista);
-console.log(localStorage);
