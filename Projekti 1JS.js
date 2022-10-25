@@ -15,3 +15,12 @@ function    newListElement()    {
     document.getElementById("input").value = "";
 }
 
+
+let lista = {
+  nimi: "Sami"
+  ikä: 45
+}
+
+let lista_serialized = JSON.stringify(lista);
+localStorage.setItem("lista", lista);
+console.log(localStorage);
