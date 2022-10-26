@@ -1,8 +1,13 @@
 function    newListElement()    {
     var list = document.getElementById('ul');
     var input = document.getElementById('input').value;
+    var inputhistory = JSON.parse(localStorage.getItem("Tehtävät")) || [];
+    inputhistory.push(input);
+    localStorage.setItem("Tehtävät", JSON.stringify(inputhistory));
+
     var add = document.createElement('li');
-    localStorage.setItem("Tehtävät", input);
+    
+    
 
     if (input === '' || input.length < 3) {
         alert("Tekstin tulee olla vähintään 3 merkkiä pitkä.");
