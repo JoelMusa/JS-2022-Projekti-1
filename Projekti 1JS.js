@@ -1,7 +1,8 @@
 function    newListElement()    {
     var list = document.getElementById('ul');
     var input = document.getElementById('input').value;
-    localStorage.setItem("Tehtävät", input);
+    localStorage.setItem("Tehtävät", JSON.stringify(input));
+    localStorage.getItem(Tehtävät)
     var add = document.createElement('li');
 
     if (input === '' || input.length < 3) {
@@ -14,7 +15,7 @@ function    newListElement()    {
       } 
       
     document.getElementById("input").value = "";
-}
+};
 
 
 
