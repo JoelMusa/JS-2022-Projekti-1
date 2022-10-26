@@ -1,10 +1,8 @@
 function    newListElement()    {
     var list = document.getElementById('ul');
     var input = document.getElementById('input').value;
-    localStorage.setItem("Tehtävät", JSON.stringify(input));
-    localStorage.removeItem(ProductsInCart);
-    
     var add = document.createElement('li');
+    localStorage.setItem("Tehtävät", input);
 
     if (input === '' || input.length < 3) {
         alert("Tekstin tulee olla vähintään 3 merkkiä pitkä.");
@@ -16,7 +14,7 @@ function    newListElement()    {
       } 
       
     document.getElementById("input").value = "";
-};
+}
 
 
 
