@@ -2,7 +2,7 @@ function    newListElement()    {
     var list = document.getElementById('ul');
     var input = document.getElementById('input').value;
     localStorage.setItem("Tehtävät", JSON.stringify(input));
-    localStorage.removeItem(Tehtävät);
+    localStorage.removeItem(ProductsInCart);
     
     var add = document.createElement('li');
 
