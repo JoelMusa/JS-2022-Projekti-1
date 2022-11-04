@@ -1,5 +1,49 @@
-ul li.checked {
-    background: #888;
-    color: #fff;
-    text-decoration: line-through;
-  }
+body {
+  box-sizing: border-box;
+}
+
+ul li {
+  padding: 12px 5px 12px 25px;
+  list-style-type: none;
+  font-size: 20px;
+  box-sizing: border-box;
+  margin: 2px;
+}
+
+ul li:hover {
+  background: #ddd;
+  border-radius: 10px;
+}
+
+span {
+  float: inline-end;
+}
+
+#deleteicon {
+  width: 20px;
+  height: 20px;
+}
+
+#deleteicon:hover {
+  width: 25px;
+  height: 25px;
+  transition: 0.3s;
+}
+
+#inputField {
+  padding-bottom: 20px;
+}
+
+.check {
+  background: #888;
+  color: #000;
+  border-radius: 10px;
+  background-image: url(iconi.png);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: 25px;
+}
+
+.jumbotron p {
+  margin-bottom: 0px;
+}

@@ -1,39 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="fi">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Projekti 1: DOM skriptaus - Sami H ja Joel M</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projekti 1: DOM skriptaus - Sami H ja Joel M</title>
 
-        <!-- Bootstrap CSS -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-        <script src="Projekti 1JS.js"></script>
-        <link rel="stylesheet"  href="Projekti 1.css">
-       
-    </head>
-    <body>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="Projekti 1JS.js"></script>
+    <link rel="stylesheet" href="Projekti 1.css" />
+  </head>
+  <body onload="search()">
     <div class="container">
-        <div class="jumbotron">
+      <div class="jumbotron">
         <div id="inputField">
-        <h1 class="text-center">Bucket lista 2023 <h2 class="text-center"> - Sami H ja Joel M</h2></h1>
-        <input type="text" id="input" placeholder="Lisää kohde...">
-        <button onclick="newListElement()" type="button"  id="button">Lisää</button>
+          <h1 class="text-center">
+            Bucket lista 2023
+            <h2 class="text-center">- Sami H ja Joel M</h2>
+          </h1>
+          <input type="text" id="input" placeholder="Lisää kohde..." />
+          <button onclick="newListElement()" type="button" id="button">
+            Lisää
+          </button>
         </div>
-        
-        <ul id="ul">
-        </ul>
-            
-        </div>
+
+        <ul id="ul" class="list-group"></ul>
+
+        <button type="button" id="removeAll">Poista kaikki</button>
+      </div>
     </div>
-    </body>
+  </body>
 </html>
 
 <ul>
-    <li>Tallennus selaimen muistiin</li>
-    <li>Poista elementtejä napilla</li>
-    <li>Merkkaa tehdyksi</li>
-    <li>muokkaa lista elementtiä</li>
-    <li>css</li>
+  <li>Tallennus selaimen muistiin</li>
+  <li>Poista elementtejä napilla - Done</li>
+  <li>Merkkaa tehdyksi - Done</li>
+  <li>muokkaa lista elementtiä</li>
+  <li>css</li>
 </ul>
