@@ -1,4 +1,4 @@
-//Lisää listaelementtejä, luo poistopainikkeen elementille ja klikkaamalla voi merkitä tehdyksi yhden listaelementin.
+//Lisää listaelementtejä, luo poistopainikkeen elementille ja klikkaamalla voi merkitä tehdyksi yhden listaelementin .
 function newListElement() {
   var list = document.getElementById("ul");
 
